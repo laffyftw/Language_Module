@@ -1,18 +1,21 @@
-import fetch from 'node-fetch';
 import path from 'path';
+import { fileURLToPath } from 'url';
+import fetch from 'node-fetch';
 
-let lang = 'en';
-let translations = {};
+const DEFAULT_LANG = 'en'; // default language code
+let lang = DEFAULT_LANG; // current language code
 
 export function setLang(newLang) {
   lang = newLang;
 }
 
 export async function t(key) {
-  if (!translations[lang]) {
-    // Fetch language file
-    const response = await fetch(`file://${path.resolve(__dirname, '..', 'locales', lang + '.json')}`);
-    translations[lang] = await response.json();
-  }
-  return translations[lang][key] || key;
+  // Load translation for current language
+  const response = await fetch(`file://${path.resolve(fileURLToPath(new URL(import.meta.url)), '..', 'locales', lang + '.json')}`);
+  const translations = await response.json();
+
+  console.log(translations);
+
+  // Return translation for key
+  return translations[key];
 }
