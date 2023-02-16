@@ -1,17 +1,18 @@
-const DEFAULT_LANG = 'en'; // default language code
-let lang = DEFAULT_LANG; // current language code
+import fetch from 'node-fetch';
+import path from 'path';
+
+let lang = 'en';
+let translations = {};
 
 export function setLang(newLang) {
   lang = newLang;
 }
 
 export async function t(key) {
-  // Load translation for current language
-  const response = await fetch(`file://${path.resolve(__dirname, '..', 'locales', lang + '.json')}`);
-  const translations = await response.json();
-
-  console.log(translations);
-
-  // Return translation for key
-  return translations[key];
+  if (!translations[lang]) {
+    // Fetch language file
+    const response = await fetch(`file://${path.resolve(__dirname, '..', 'locales', lang + '.json')}`);
+    translations[lang] = await response.json();
+  }
+  return translations[lang][key] || key;
 }
