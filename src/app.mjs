@@ -1,4 +1,4 @@
-import i18next from 'i18next';
+import i18next from '../../node_modules/i18next/dist/esm/i18next.js';
 
 i18next.init({
   lng: document.querySelector('html').lang,
