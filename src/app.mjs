@@ -34,3 +34,5 @@ const updateContent = () => {
 updateContent();
 
 window.changeLanguage = changeLanguage;
+
+export { i18next };
