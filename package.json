@@ -1,19 +1,4 @@
 {
   "name": "langmodule",
-  "version": "0.0.1",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/laffyftw/Language_Module.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/laffyftw/Language_Module/issues"
-  },
-  "homepage": "https://github.com/laffyftw/Language_Module#readme"
+  "version": "0.0.1"
 }
