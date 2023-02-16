@@ -1,19 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Language Module</title>
+    <meta charset="UTF-8">
+    <title>Language Switcher</title>
   </head>
   <body>
-    <div>
-      <p id="key1"></p>
-      <p id="key2"></p>
-      <p id="language"></p>
-    </div>
-    <button onclick="changeLanguage('en')">English</button>
-    <button onclick="changeLanguage('fr')">Français</button>
-    <script type="module" src="./src/app.mjs"></script>
-    <script src="./dist/bundle.js"></script>
+    <h1 id="title"></h1>
+    <h2 id="subtitle"></h1>
+    <button id="no-button">Norwegian</button>
+    <button id="en-button">English</button>
+    <button id="fr-button">French</button>
+
+   
+    <script type="module">
+      import { setLang, t } from './src/lang.mjs';
+
+      // Set initial language
+      setLang(navigator.language);
+
+     // Set title
+      const titleElem = document.getElementById('title');
+      const subtitleElem = document.getElementById('subtitle');
+      const title = await t('welcome');
+      const subtitle = await t('language');
+      titleElem.textContent = title;
+      subtitleElem.textContent = subtitle;
+
+      // Add click event listeners to language buttons
+      document.getElementById('no-button').addEventListener('click', async () => {
+        await setLang('nb-NO');
+        const title = await t('welcome');
+        const subtitle = await t('language');
+        titleElem.textContent = title;
+        subtitleElem.textContent = subtitle;
+      });
+
+      document.getElementById('en-button').addEventListener('click', async () => {
+        await setLang('en');
+        const title = await t('welcome');
+        const subtitle = await t('language');
+        titleElem.textContent = title;
+        subtitleElem.textContent = subtitle;
+      });
+
+      document.getElementById('fr-button').addEventListener('click', async () => {
+        await setLang('fr');
+        const title = await t('welcome');
+        const subtitle = await t('language');
+        titleElem.textContent = title;
+        subtitleElem.textContent = subtitle;
+      });
+    </script>
   </body>
 </html>
