@@ -1,5 +1,9 @@
 {
-  "joke": "norsk oversatt",
-  "Why did the chicken cross the road?": "Why did the chicken cross the playground?",
-  "To get to the other side!": "To get to the other slide!"
+  "jokes": [
+    "Norsk",
+    "Norsk",
+    "Norsk",
+    "Norsk",
+    "Norsk"
+  ]
 }

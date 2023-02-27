@@ -1,5 +1,9 @@
 {
-  "joke": "fransk oversatt",
-  "Why did the chicken cross the road?": "fransk oversattfewssefe",
-  "To get to the other side!": "fransk oversatt"
+  "jokes": [
+    "French",
+    "French",
+    "French",
+    "French",
+    "French"
+  ]
 }

@@ -1,5 +1,9 @@
 {
-  "joke": "Sorry, I don't have any jokes right now",
-  "Why did the chicken cross the road?": "Why did the chicken cross the playground?",
-  "To get to the other side!": "To get to the other slide!"
+  "jokes": [
+    "Why do we tell actors to \"break a leg\"? Because every play has a cast.",
+    "What do you call a fake noodle? An impasta.",
+    "Why don't scientists trust atoms? Because they make up everything.",
+    "Why don’t oysters share their pearls? Because they’re shellfish.",
+    "Why did the hipster burn his tongue? He drank his coffee before it was cool."
+  ]
 }
