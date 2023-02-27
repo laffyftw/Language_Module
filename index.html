@@ -29,7 +29,7 @@
       // Add click event listeners to language buttons
       document.getElementById('no-button').addEventListener('click', async () => {
         await setLang('nb-NO');
-        const title = await t('welcome');
+        const title = await t('Sorry, I am all out of laughs');
         const subtitle = await t('language');
         titleElem.textContent = title;
         subtitleElem.textContent = subtitle;
@@ -37,7 +37,7 @@
 
       document.getElementById('en-button').addEventListener('click', async () => {
         await setLang('en');
-        const title = await t('welcome');
+        const title = await t('Sorry, I am all out of laughs');
         const subtitle = await t('language');
         titleElem.textContent = title;
         subtitleElem.textContent = subtitle;
@@ -45,7 +45,7 @@
 
       document.getElementById('fr-button').addEventListener('click', async () => {
         await setLang('fr');
-        const title = await t('welcome');
+        const title = await t('Sorry, I am all out of laughs');
         const subtitle = await t('language');
         titleElem.textContent = title;
         subtitleElem.textContent = subtitle;
