@@ -1,8 +1,16 @@
 {
-  "jokes": [
-    "Vous entendez parler du nouveau restaurant appelé Karma? Il n'y a pas de menu : vous obtenez ce que vous méritez.",
-    "Avez-vous entendu parler de l'astronaute claustrophobe? Il avait juste besoin d'un peu d'espace.",
-    "Pourquoi les scientifiques ne font-ils pas confiance aux atomes ? Parce qu'ils constituent tout.",
-    "Pourquoi ne pouvez-vous pas expliquer les jeux de mots aux kleptomanes? Ils prennent toujours les choses au pied de la lettre."
-  ]
+  "register": "Register",
+  "username_placeholder": "Username",
+  "password_placeholder": "Password",
+  "login": "Login",
+  "add_todo": "Add Todo",
+  "delete": "Delete",
+  "error_registering_user": "Error registering user",
+  "error_logging_in": "Error logging in",
+  "wrong_username_or_password": "Wrong username or password",
+  "username_cannot_be_empty": "Username cannot be empty",
+  "password_must_be_8_characters": "Password must be at least 8 characters long",
+  "error_deleting_todo": "Error deleting todo",
+  "successfully_registered": "Successfully registered!",
+  "successfully_logged_in": "Successfully logged in!"
 }
