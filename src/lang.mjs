@@ -7,7 +7,7 @@ export function setLang(newLang) {
 
 export async function t(key) {
   // Load translation for current language
-  const response = await fetch(`/jokelang/${lang}.json`);
+  const response = await fetch(`../jokelang/${lang}.json`);
   const translations = await response.json();
 
   console.log(translations);
