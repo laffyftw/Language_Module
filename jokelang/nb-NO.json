@@ -2,6 +2,7 @@
   "register": "Registrer",
   "username_placeholder": "Brukernavn",
   "password_placeholder": "Passord",
+  "todoinput_placeholder": "Skriv inn ditt gjøremål her",
   "login": "Logg inn",
   "add_todo": "Legg til gjøremål",
   "delete": "Slett",

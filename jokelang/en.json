@@ -2,6 +2,7 @@
   "register": "Register",
   "username_placeholder": "Username",
   "password_placeholder": "Password",
+  "todoinput_placeholder": "Write your todo here",
   "login": "Login",
   "add_todo": "Add Todo",
   "delete": "Delete",
