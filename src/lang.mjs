@@ -14,8 +14,6 @@ export async function t(key) {
   const response = await fetch(filePath.path);
   const translations = await response.json();
 
-  console.log(translations);
-
   // Return translation for key
   return translations[key];
 }
