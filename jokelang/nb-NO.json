@@ -5,12 +5,12 @@
   "login": "Logg inn",
   "add_todo": "Legg til gjøremål",
   "delete": "Slett",
-  "error_registering_user": "Feil ved registrering av bruker",
-  "error_logging_in": "Feil ved å logge inn",
+  "error_registering_user": "Brukeren eksisterer allerede",
+  "error_logging_in": "En feil oppstod ved innlogging",
   "wrong_username_or_password": "Feil brukernavn eller passord",
   "username_cannot_be_empty": "Brukernavn kan ikke være tomt",
   "password_must_be_8_characters": "Passord må ha minst 8 tegn",
   "error_deleting_todo": "Feil ved sletting av gjøremål",
   "successfully_registered": "Registrering vellykket!",
-  "successfully_logged_in": "Innlogging vellykket"
+  "successfully_logged_in": "Innlogging vellykket!"
 }
